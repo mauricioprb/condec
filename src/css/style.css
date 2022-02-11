@@ -1,0 +1,99 @@
+.input_numbin {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.campo_numbin {
+  font-family: Arial;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #9b9b9b;
+  padding: 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.campo_numbin::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.campo_numbin:-ms-input-placeholder {
+  color: transparent;
+}
+
+.campo_numbin::-ms-input-placeholder {
+  color: transparent;
+}
+
+.campo_numbin::placeholder {
+  color: transparent;
+}
+
+.campo_numbin:placeholder-shown ~ .numbin_label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.numbin_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.campo_numbin:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  color: #9b9b9b;
+  border-image-slice: 1;
+}
+
+.campo_numbin:focus ~ .numbin_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+  font-weight: 700;
+}
+
+/* reset input */
+.campo_numbin:required, .campo_numbin:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* demo */
+body {
+  font-family: 'Arial', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
