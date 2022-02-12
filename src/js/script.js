@@ -1,5 +1,5 @@
 function converterDecimal(numero) {
-    let num = numero
+    let decimal = parseInt(numero)
     let binario = (num % 2).toString()
     for (; num > 1;) {
         num = parseInt(num / 2);
