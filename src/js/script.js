@@ -5,5 +5,5 @@ function converterDecimal(numero) {
         num = parseInt(num / 2);
         binario = (num % 2) + (binario);
     }
-    document.getElementById("resultado").innerText = binario;
+    document.getElementById("resultado").innerText = numero;
 }
