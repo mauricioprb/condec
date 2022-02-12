@@ -12,15 +12,29 @@
     <script src="../src/js/bootstrap.min.js"></script>
     <script src="../src/js/index.js"></script>
 
-    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
     <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
 </head>
 <body>
+<header>
+    <h1>Condec <span style="color:#01e95a;">Binary</span></h1>
+</header>
     <!-- Converter decimal para binário -->
-    <form>
-        <div class="bin_dec">
-            
+    <div class="campos">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="num_bin" placeholder="Número binário">
+            <label for="floatingInput">Número binário</label>
         </div>
-    </form>
+
+        <button type="button" class="btn btn-dark" id="botao_bin">Copiar</button>
+
+        <!-- Converter decimal para binário -->
+        <div class="form-floating">
+            <input type="text" class="form-control" id="num_dec" placeholder="Número decimal">
+            <label for="floatingInput">Número decimal</label>
+        </div>
+
+        <button type="button" class="btn btn-dark" id="botao_dec">Copiar</button>
+    </div>
 </body>
 </html>
