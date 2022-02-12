@@ -1,6 +1,6 @@
 function binarioParaDecimal(binario) {
     let decimal = 0;
-    for (let c = 0; c < binario.length; c++)
+    for (let i = 0; i < binario.length; i++)
         decimal += Math.pow(2, c) * binario[binario.length - c - 1]
     return `${decimal}`
 }
