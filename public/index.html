@@ -7,7 +7,8 @@
     
     <title>Condec Binary</title>
 
-    <script src="../src/js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../src/js/script.js"></script>
 
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
@@ -17,15 +18,15 @@
         <a href="#" class="header-logo">Condec <span style="color: #00ff6a;">Binary</span></a>
     </header>
     <main>
-        <div class="campos">
-            <!-- Campo número binário -->
-            <label for="bin_dec">Número binário</label>
-            <input type="text" id="binario" name="num_binario">
-            <button class="res_decimal">Converter</button>
+        <!-- Campo onde o usuário digita o binário -->
+        <div class="container">
+            <div class="input-container">
+                <input type="text" onchange="converterDec(this.value)"> <!-- no JS usa converterDec como função e o "resultado como valor" -->
+            </div>
 
-            <!-- Campo número decimal -->
-            <label for="resultado">Resultado</label>
-            <input type="text" id="decimal" name="num_decimal">
+            <div class="output-container">
+                <textarea id="resultado" readonly></textarea>
+            </div>
         </div>
     </main>
     <footer class="footer">Copyright © 2022 Condec Binary</footer>
