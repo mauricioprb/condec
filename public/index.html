@@ -7,34 +7,28 @@
     
     <title>Condec Binary</title>
 
-    <script src="../src/js/jquery-3.6.0.min.js"></script>
-    <script src="../src/js/popper.min.js"></script>
-    <script src="../src/js/bootstrap.min.js"></script>
-    <script src="../src/js/index.js"></script>
+    <script src="../src/js/script.js"></script>
 
     <link rel="stylesheet" href="../src/css/style.css">
-    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
 </head>
 <body>
-<header>
-    <h1>Condec <span style="color:#01e95a;">Binary</span></h1>
-</header>
-    <!-- Converter decimal para binário -->
-    <div class="campos">
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="num_bin" placeholder="Número binário">
-            <label for="floatingInput">Número binário</label>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <a href="#" class="header-logo">Condec <span style="color: #00ff6a;">Binary</span></a>
+    </header>
+    <main>
+        <div class="campos">
+            <!-- Campo número binário -->
+            <label for="bin_dec">Número binário</label>
+            <input type="text" id="binario" name="num_binario">
+            <button class="copiar_binario">Copiar</button>
+
+            <!-- Campo número decimal -->
+            <label for="dec_bin">Número decimal</label>
+            <input type="text" id="decimal" name="num_decimal">
+            <button class="copiar_decimal">Copiar</button>
         </div>
-
-        <button type="button" class="btn btn-dark" id="botao_bin">Copiar</button>
-
-        <!-- Converter decimal para binário -->
-        <div class="form-floating">
-            <input type="text" class="form-control" id="num_dec" placeholder="Número decimal">
-            <label for="floatingInput">Número decimal</label>
-        </div>
-
-        <button type="button" class="btn btn-dark" id="botao_dec">Copiar</button>
-    </div>
+    </main>
+    <footer class="footer">Copyright © 2022 Condec Binary</footer>
 </body>
 </html>
