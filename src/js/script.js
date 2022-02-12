@@ -1,14 +1,7 @@
-// decimal para binário
-function decimalParaBinario(numero) {
-    const binario = []
-    divisao = numero / 2
-    while (divisao != 0) {
-        diferenca = numero - (divisao * 2)
-        binario.lastIndexOf
-        numero = divisao
-        divisao = numero / 2
-    }
-    binario.lastIndexOf(divisao + 1)
-
+function binarioParaDecimal(binario) {
+    let decimal = 0;
+    for (let c = 0; c < binario.length; c++)
+        decimal += Math.pow(2, c) * binario[binario.length - c - 1]
+    return `${decimal}`
 }
-console.log(decimalParaBinario(2020))
+console.log(binarioParaDecimal('11111100100'))
