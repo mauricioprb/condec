@@ -1,5 +1,6 @@
 function converterDec(numero) {
-    let decimal = perseInt(numero)
+    let decimal = parseInt(numero)
     let binario = decimal.toString(2)
     document.getElementById("resultado").innerText = binario;
 }
+console.log(converterDec(2020))
