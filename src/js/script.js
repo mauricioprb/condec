@@ -6,4 +6,5 @@ function converterDec(numero) {
         binario = (num % 2) + (binario);
     }
     document.getElementById("resultado").innerText = bin;
+    return (`${"resultado"}`)
 }
