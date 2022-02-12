@@ -1,8 +1,9 @@
-function converterDecimal(numero) {
-    let binario = parseInt(numero)
-    let resultado = 0;
-    for (let i = 0; i < binario.length; i++)
-        resultado += Math.pow(2, i) * binario[binario.length - i - 1]
+function converterDec(numero) {
+    let num = numero;
+    let binario = (num % 2).toString();
+    for (; num > 1;) {
+        num = parseInt(num / 2);
+        binario = (num % 2) + (binario);
+    }
     document.getElementById("resultado").innerText = bin;
-
 }
