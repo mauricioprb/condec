@@ -1,9 +1,5 @@
-function converterDecimal(numero) {
+function converterDec(numero){
     let decimal = parseInt(numero)
-    let binario = (num % 2).toString()
-    for (; num > 1;) {
-        num = parseInt(num / 2);
-        binario = (num % 2) + (binario);
-    }
-    document.getElementById("resultado").innerText = numero;
+    let binario = decimal.toString(2)
+    document.getElementById("resultado").innerHTML = binario
 }
