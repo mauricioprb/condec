@@ -27,19 +27,19 @@ body {
 }
 
 header {
-  margin: 2em;
+  margin: 1em;
 }
 
 header a {
   text-decoration: none;
   color: #ffff;
-  font-size: 40pt;
+  font-size: 35pt;
   font-weight: 550;
 }
 
 .container {
   margin: 1em;
-  width: 32em;
+  width: 25em;
   height: 15em;
   background: #1d1d1d;
   display: -webkit-box;
@@ -60,7 +60,7 @@ header a {
 
 #decimal, #resultado {
   margin: 1em;
-  width: 30em;
+  width: 22em;
   height: 4em;
   border-radius: 1em;
   text-align: center;
@@ -80,10 +80,10 @@ header a {
 }
 
 footer {
-  font-size: 13pt;
+  font-size: 12pt;
   text-align: center;
   color: #ffff;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 footer .redes {
