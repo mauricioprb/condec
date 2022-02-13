@@ -10,6 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../src/js/script.js"></script>
 
+    <link rel="shortcut icon" href="../src/assets/img/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
@@ -21,14 +23,24 @@
         <!-- Campo onde o usuário digita o binário -->
         <div class="container">
             <div class="input-container">
-                <input type="text" onchange="converterDec(this.value)"> <!-- no JS usa converterDec como função e o "resultado como valor" -->
+                <input type="text" id="decimal" placeholder="Número decimal" onchange="converterDec(this.value)">
             </div>
 
             <div class="output-container">
-                <textarea id="resultado" readonly></textarea>
+                <textarea id="resultado" placeholder="Número binário" readonly></textarea>
             </div>
         </div>
     </main>
-    <footer class="footer">Copyright © 2022 Condec Binary</footer>
 </body>
+<footer class="footer">Copyright © 	
+    <script type="text/javascript">document.write(new Date().getFullYear());</script><b> Condec Binary</b>
+    <div class="redes">
+        <a href="https://www.instagram.com/mauricioprb" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.instagram.com/bernardo.viero" target="_blank" class="fab fa-instagram" id="bernardo"></a>
+        <a href="https://www.linkedin.com/in/mauriciopereirabraga" target="_blank" class="fab fa-linkedin"></a>
+        <a href="https://www.linkedin.com/in/bernardo-viero-529ab7213" target="_blank" class="fab fa-linkedin" id="bernardo"></a>
+        <a href="https://github.com/mauricioprb" target="_blank" class="fab fa-github"></a>
+        <a href="https://github.com/bernardodsv" target="_blank" class="fab fa-github" id="bernardo"></a>
+    </div>
+</footer>
 </html>
