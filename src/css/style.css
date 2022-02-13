@@ -27,20 +27,20 @@ body {
 }
 
 header {
-  margin: 1em;
+  margin: 5px;
 }
 
 header a {
   text-decoration: none;
   color: #ffff;
-  font-size: 35pt;
+  font-size: 30pt;
   font-weight: 550;
 }
 
 .container {
   margin: 1em;
-  width: 25em;
-  height: 15em;
+  width: 20em;
+  height: 13em;
   background: #1d1d1d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,12 +60,12 @@ header a {
 
 #decimal, #resultado {
   margin: 1em;
-  width: 22em;
+  width: 18em;
   height: 4em;
   border-radius: 1em;
   text-align: center;
   vertical-align: middle;
-  line-height: 50px;
+  line-height: 53px;
   border: none;
   color: #ffff;
   background: #383838;
@@ -80,7 +80,7 @@ header a {
 }
 
 footer {
-  font-size: 12pt;
+  font-size: 11pt;
   text-align: center;
   color: #ffff;
   margin-top: 1em;
