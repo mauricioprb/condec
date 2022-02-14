@@ -58,25 +58,20 @@ header a {
   border-radius: 1em;
 }
 
-#decimal, #resultado {
+#decimal, #binario {
+  resize: none;
   margin: 1em;
   width: 18em;
   height: 4em;
   border-radius: 1em;
   text-align: center;
-  vertical-align: middle;
-  line-height: 53px;
   border: none;
   color: #ffff;
   background: #383838;
 }
 
-#decimal:focus, #resultado:focus {
+#decimal:focus, #binario:focus {
   outline: none;
-}
-
-#resultado {
-  resize: none;
 }
 
 footer {
