@@ -26,9 +26,11 @@
         <!-- Campo onde o usuário digita o binário -->
         <div class="container">
             <div class="input-container">
-                <input type="number" id="decimal" placeholder="Número decimal">
+                <input type="number" id="decimal" placeholder="Número decimal"
+                oninput="temperatureConverter(this.value)" 
+                onchange="temperatureConverter(this.value)">
             </div>
-
+            </p><span id="outputBinario"></span>
             <div class="output-container">
                 <input type="number" id="binario" placeholder="Número binário" readonly>
             </div>
