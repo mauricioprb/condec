@@ -1,5 +1,5 @@
-function temperatureConverter(valNum) {
-    document.getElementById("outputBinario").innerHTML=valNum;
+function decimalConverter(valDec) {
+    document.getElementById("outputBinario").innerHTML=valDec;
 }
 /*function converterDec(numero) {
     let decimal = parseInt(document.getElementById('decimal').value)
