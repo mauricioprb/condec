@@ -6,8 +6,14 @@ function decimalConverter(conv,numero) {
         let binario = numero.toString(2);
         inputBinario.value=(binario);
     }
-    if (conv=="inputBinario") {
-        let decimal = parseInt(numero, 2);
-        inputDecimal.value=(decimal);
+    if(conv == "inputBinario"){
+    	lastDigit = numero % 10;   
+        if (lastDigit == 1 || lastDigit == 0) {
+        	let decimal = parseInt(numero, 2)
+        	inputDecimal.value = (decimal)
+        }
+        else {
+            inputDecimal.value = NaN
+        }  
     }
 }
