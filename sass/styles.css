@@ -1,4 +1,97 @@
 * {
   font-family: Ubuntu;
 }
+
+body {
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+header {
+  margin: 30px;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 40pt;
+  font-weight: 550;
+}
+
+.containerConteudo {
+  margin: 1em;
+  width: 20em;
+  height: 13em;
+  background: #0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1em;
+}
+
+#inputDecimal, #inputBinario {
+  resize: none;
+  margin: 15px;
+  width: 400px;
+  height: 80px;
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  color: #ffff;
+  background: #0E0E0E;
+}
+
+input {
+  display: inline-block;
+}
+
+#inputDecimal:focus, #inputBinario:focus {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+footer {
+  font-family: 'Ubuntu';
+  font-size: 11pt;
+  text-align: center;
+  color: #ffff;
+  margin-top: 30px;
+}
 /*# sourceMappingURL=styles.css.map */
