@@ -21,9 +21,14 @@
         </div>
     </header>
     <main>
-        <div id="inputOutput">
-            <textarea id="ioDecimal" placeholder="Número decimal"></textarea>
-            <textarea id="ioBinario" placeholder="Número binário"></textarea>
+        <div>
+            <input id="inputDecimal" type="number" placeholder="Decimal" 
+            oninput="decimalConverter(this.id,this.value)" 
+            onchange="decimalConverter(this.id,this.value)">
+        </div>    
+            <input id="inputBinario" type="number" placeholder="Binário" 
+            oninput="decimalConverter(this.id,this.value)"
+            onchange="decimalConverter(this.id,this.value)">
         </div>
     </main>
     <footer class="footer">
