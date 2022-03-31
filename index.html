@@ -21,15 +21,13 @@
         </div>
     </header>
     <main>
-        <div>
-            <input id="inputDecimal" type="number" placeholder="Decimal" 
-            oninput="decimalConverter(this.id,this.value)" 
-            onchange="decimalConverter(this.id,this.value)">
+        <div class="conversor">
+            <input id="inputDecimal" type="number" placeholder="Número decimal" 
+            oninput="decimalConverter(this.id,this.value)" onchange="decimalConverter(this.id,this.value)">
+
+            <input id="inputBinario" type="number" placeholder="Número binário"
+            oninput="decimalConverter(this.id,this.value)" onchange="decimalConverter(this.id,this.value)">
         </div>    
-            <input id="inputBinario" type="number" placeholder="Binário" 
-            oninput="decimalConverter(this.id,this.value)"
-            onchange="decimalConverter(this.id,this.value)">
-        </div>
     </main>
     <footer class="footer">
         Copyright © <script type="text/javascript">document.write(new Date().getFullYear());</script> Condec Binary
